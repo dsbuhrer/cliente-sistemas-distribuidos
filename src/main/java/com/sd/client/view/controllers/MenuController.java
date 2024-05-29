@@ -2,6 +2,7 @@ package com.sd.client.view.controllers;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.sd.client.app.models.User;
+import com.sd.client.app.repositories.EmpresaRepository;
 import com.sd.client.app.repositories.LoginRepository;
 import com.sd.client.app.repositories.UserRepository;
 import com.sd.client.app.storage.LoggedUser;
@@ -28,6 +29,7 @@ public class MenuController extends BaseController {
     public MenuItem gen_route_btn;
     LoginRepository loginRepository = new LoginRepository();
     UserRepository userRepository = new UserRepository();
+    EmpresaRepository empresaRepository = new EmpresaRepository();
 
     public void createUser(ActionEvent actionEvent) {
         Client.changeScreen(getStage(menu_bar),"user/create_user.fxml");
@@ -59,6 +61,19 @@ public class MenuController extends BaseController {
         Client.changeScreen(getStage(menu_bar),"user/view_user.fxml", LoggedUser.id());
     }
 
+    public void openDestroySelfEmpresaModal(ActionEvent actionEvent) {
+        Client.changeScreen(getStage(menu_bar),"empresa/password_modal.fxml");
+    }
+
+    public void editSelfEmpresa(ActionEvent actionEvent) {
+        Client.changeScreen(getStage(menu_bar),"empresa/edit_user.fxml", LoggedUser.id());
+    }
+
+    public void viewSelfEmpresa(ActionEvent actionEvent) {
+        Client.changeScreen(getStage(menu_bar),"empresa/view_user.fxml", LoggedUser.id());
+    }
+
+
     public void generateRoute(ActionEvent actionEvent) {
         Client.changeScreen(getStage(menu_bar),"route/generate_route.fxml");
     }
@@ -69,4 +84,13 @@ public class MenuController extends BaseController {
             Client.changeScreen(getStage(destroy_btn),"login/login.fxml");
         }
     }
+
+    public void destroySelfEmpresa(ActionEvent actionEvent) throws JsonProcessingException {
+        if(empresaRepository.destroySelf()){
+            this.loginRepository.logout();
+            Client.changeScreen(getStage(destroy_btn),"login/login.fxml");
+        }
+    }
+
+
 }

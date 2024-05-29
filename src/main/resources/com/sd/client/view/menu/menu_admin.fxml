@@ -17,6 +17,11 @@
 <!--           <MenuItem fx:id="add_usr_btn" mnemonicParsing="false" onAction="#createUser" text="Adicionar" />-->
 <!--            <MenuItem fx:id="list_usr_btn" mnemonicParsing="false" onAction="#listUsers" text="Listar" />-->
        </Menu>
+         <Menu mnemonicParsing="false" text="Empresas">
+             <MenuItem fx:id="edit_self_empresa_btn" mnemonicParsing="false" onAction="#editSelfEmpresa" text="Editar minha empresa" />
+             <MenuItem fx:id="view_self_empresa_btn" mnemonicParsing="false" onAction="#viewSelfEmpresa" text="Visualizar minha empresa" />
+             <MenuItem fx:id="destroy_self_empresa_btn" mnemonicParsing="false" onAction="#openDestroySelfEmpresaModal" text="Excluir minha empresa" />
+         </Menu>
        <Menu mnemonicParsing="false" text="Logout">
          <MenuItem mnemonicParsing="false" onAction="#logout" text="Sair" />
        </Menu>

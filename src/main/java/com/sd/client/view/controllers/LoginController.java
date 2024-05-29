@@ -19,6 +19,9 @@ public class LoginController extends BaseController {
     public TextField passwd_tf;
     public Button login_btn;
     public Button add_usr_btn;
+    public Button add_empresa_btn;
+    public Button login_empresa_btn;
+    public Button login_candidato_btn;
     LoginRepository login_repository = new LoginRepository();
 
 
@@ -32,10 +35,28 @@ public class LoginController extends BaseController {
         String next_screen = login_repository.login(email,password);
         Client.changeScreen(getStage(login_btn),next_screen);
     }
+    @FXML
+    protected void loginEmpresa() throws IOException {
+        String email = email_tf.getText();
+        String password = passwd_tf.getText();
+        String next_screen = login_repository.loginEmpresa(email,password);
+        Client.changeScreen(getStage(login_btn),next_screen);
+    }
 
     public void createUser(ActionEvent actionEvent) {
         Client.changeScreen(getStage(add_usr_btn),"user/create_user.fxml");
     }
 
+    public void createEmpresa(ActionEvent actionEvent) {
+        Client.changeScreen(getStage(add_empresa_btn),"empresa/create_user.fxml");
+    }
+
+    public void loginEmpresaScreen(ActionEvent actionEvent) {
+        Client.changeScreen(getStage(login_empresa_btn),"loginEmpresa/login.fxml");
+    }
+
+    public void loginCandidato(ActionEvent actionEvent) {
+        Client.changeScreen(getStage(login_candidato_btn),"login/login.fxml");
+    }
 
 }

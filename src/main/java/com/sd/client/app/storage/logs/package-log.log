@@ -413,3 +413,166 @@
 2024-05-15 23:04:42.429 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"cadastrarCandidato","mensagem":"Login ou senha incorretos","status":404}
 2024-05-15 23:04:54.907 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"cadastrarCandidato","senha":"asasdasd","nome":"Nome teste","email":"nome@teste.com.br"}
 2024-05-15 23:04:54.987 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"cadastrarCandidato","status":201,"token":"993249e5-370e-4536-bc59-f9e2c1f050d8"}
+2024-05-22 21:32:54.006 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginCandidato","senha":"","email":""}
+2024-05-22 21:32:54.218 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginCandidato","mensagem":"Login ou senha incorretos","status":401}
+2024-05-22 21:42:10.766 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginCandidato","senha":"","email":""}
+2024-05-22 21:42:10.781 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginCandidato","mensagem":"Login ou senha incorretos","status":401}
+2024-05-22 21:42:17.603 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginCandidato","senha":"","email":""}
+2024-05-22 21:42:17.611 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginCandidato","mensagem":"Login ou senha incorretos","status":401}
+2024-05-22 21:43:52.396 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"","email":""}
+2024-05-22 21:43:52.598 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","mensagem":"Login ou senha incorretos","status":401}
+2024-05-22 21:44:34.153 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"","email":""}
+2024-05-22 21:44:34.167 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","mensagem":"Login ou senha incorretos","status":401}
+2024-05-22 22:21:09.959 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"cadastrarEmpresa","senha":"senha","ramo":"ramo","cnpj":"cnpj","razaoSocial":"razao","email":"emai","descricao":"desc"}
+2024-05-22 22:21:10.227 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"cadastrarEmpresa","mensagem":"Login ou senha inválidos!","status":404}
+2024-05-22 22:50:47.091 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"cadastrarEmpresa","senha":"das","ramo":"asd","cnpj":"dasdasd","razaoSocial":"dasdas","email":"dasd","descricao":"asdasd"}
+2024-05-22 22:54:43.335 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"cadastrarEmpresa","senha":"sadd","ramo":"asdasd","cnpj":"dasdsa","razaoSocial":"das","email":"asdasd","descricao":"dasd"}
+2024-05-22 22:54:43.576 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"cadastrarEmpresa","mensagem":"Login ou senha incorretos","status":404}
+2024-05-22 23:01:17.008 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"admin@mail.com"}
+2024-05-22 23:01:17.147 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","mensagem":"Login ou senha incorretos","status":401}
+2024-05-22 23:11:38.214 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"admin@mail.com"}
+2024-05-22 23:11:38.524 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"2990d705-515e-410a-9e75-530e97cf2ce3"}
+2024-05-22 23:11:42.916 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"logout","token":"2990d705-515e-410a-9e75-530e97cf2ce3"}
+2024-05-22 23:11:42.943 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"logout","status":204}
+2024-05-22 23:12:17.434 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"cadastrarEmpresa","senha":"123123","ramo":"ramo","cnpj":"vnpj","razaoSocial":"razao","email":"email@mail.com","descricao":"desc"}
+2024-05-22 23:12:17.465 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"cadastrarEmpresa","mensagem":"E-mail já cadastrado","status":422}
+2024-05-22 23:17:41.691 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"cadastrarEmpresa","senha":"123123","ramo":"ramos","cnpj":"11111111","razaoSocial":"razap","email":"email@teste.com","descricao":"desc"}
+2024-05-22 23:17:41.969 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"cadastrarEmpresa","status":201,"token":"7e087f5a-cf5f-4050-936c-6cb7634c6559"}
+2024-05-22 23:18:02.004 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginCandidato","senha":"123123","email":"email@teste.com"}
+2024-05-22 23:18:02.054 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginCandidato","mensagem":"Login ou senha incorretos","status":401}
+2024-05-22 23:18:21.289 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123123","email":"email@teste.com"}
+2024-05-22 23:18:21.314 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"7e087f5a-cf5f-4050-936c-6cb7634c6559"}
+2024-05-22 23:18:25.190 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"logout","token":"7e087f5a-cf5f-4050-936c-6cb7634c6559"}
+2024-05-22 23:18:25.199 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"logout","status":204}
+2024-05-22 23:18:45.182 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123123","email":"email@teste.com"}
+2024-05-22 23:18:45.198 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"7e087f5a-cf5f-4050-936c-6cb7634c6559"}
+2024-05-27 18:33:40.026 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123123","email":"email@teste.com"}
+2024-05-27 18:33:40.324 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"7e087f5a-cf5f-4050-936c-6cb7634c6559"}
+2024-05-27 18:49:37.353 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"cadastrarEmpresa","senha":"123123","ramo":"ramo","cnpj":"123123123","razaoSocial":"razao","email":"email@mail.com","descricao":"desc"}
+2024-05-27 18:49:38.248 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"cadastrarEmpresa","status":201,"token":"18d49313-25be-4a8e-b379-279641043d3b"}
+2024-05-27 18:50:05.489 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123123","email":"email@mail.com"}
+2024-05-27 18:50:05.526 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"60a994b4-a166-4815-9004-9118bd1540ae"}
+2024-05-27 18:50:20.345 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"email@teste.com"}
+2024-05-27 18:50:20.350 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"visualizarEmpresa","mensagem":"E-mail da empresa não encontrado","status":404}
+2024-05-27 19:04:02.471 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"empresa@teste.com"}
+2024-05-27 19:04:02.856 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"aea8c869-039c-4aad-8cda-54f18099f590"}
+2024-05-27 19:05:03.408 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-27 19:05:03.493 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","operacao":"visualizarEmpresa","razaoSocial":"Empresa Teste","status":201}
+2024-05-27 19:10:56.545 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"empresa@teste.com"}
+2024-05-27 19:10:56.787 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"aea8c869-039c-4aad-8cda-54f18099f590"}
+2024-05-27 19:10:59.490 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-27 19:10:59.510 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","operacao":"visualizarEmpresa","cnpj":"123456789101","razaoSocial":"Empresa Teste","status":201,"descricao":"este"}
+2024-05-27 19:17:48.032 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"empresa@teste.com"}
+2024-05-27 19:17:48.333 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"aea8c869-039c-4aad-8cda-54f18099f590"}
+2024-05-27 19:17:53.340 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-27 19:17:53.354 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"Teste","operacao":"visualizarEmpresa","cnpj":"123456789101","razaoSocial":"Empresa Teste","status":201,"descricao":"este"}
+2024-05-27 19:22:29.547 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"empresa@teste.com"}
+2024-05-27 19:22:29.806 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"aea8c869-039c-4aad-8cda-54f18099f590"}
+2024-05-27 19:22:33.564 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-27 19:22:33.577 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"Teste","operacao":"visualizarEmpresa","cnpj":"123456789101","razaoSocial":"Empresa Teste","status":201,"descricao":"este"}
+2024-05-27 19:22:37.308 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-27 19:22:37.334 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"Teste","operacao":"visualizarEmpresa","cnpj":"123456789101","razaoSocial":"Empresa Teste","status":201,"descricao":"este"}
+2024-05-27 19:22:43.847 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"apagarCandidato","email":"email@mail.com"}
+2024-05-27 19:22:43.883 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"apagarCandidato","status":201}
+2024-05-27 19:22:44.748 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"logout","token":"60a994b4-a166-4815-9004-9118bd1540ae"}
+2024-05-27 19:22:44.752 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"logout","status":204}
+2024-05-27 19:26:00.077 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"empresa@teste.com"}
+2024-05-27 19:26:00.089 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"aea8c869-039c-4aad-8cda-54f18099f590"}
+2024-05-27 19:29:52.923 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-27 19:29:52.987 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"Teste","operacao":"visualizarEmpresa","cnpj":"123456789101","razaoSocial":"Empresa Teste","status":201,"descricao":"este"}
+2024-05-27 19:37:30.239 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"empresa@teste.com"}
+2024-05-27 19:37:30.279 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"aea8c869-039c-4aad-8cda-54f18099f590"}
+2024-05-27 19:38:25.390 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-27 19:38:25.414 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"Teste","operacao":"visualizarEmpresa","cnpj":"123456789101","razaoSocial":"Empresa Teste","status":201,"descricao":"este"}
+2024-05-27 19:38:29.359 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-27 19:38:29.370 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"Teste","operacao":"visualizarEmpresa","cnpj":"123456789101","razaoSocial":"Empresa Teste","status":201,"descricao":"este"}
+2024-05-27 20:09:52.394 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"empresa@teste.com"}
+2024-05-27 20:09:52.417 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"aea8c869-039c-4aad-8cda-54f18099f590"}
+2024-05-27 20:09:56.744 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-27 20:09:56.762 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"Teste","operacao":"visualizarEmpresa","cnpj":"123456789101","razaoSocial":"Empresa Teste","status":201,"descricao":"este"}
+2024-05-27 20:14:13.724 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"empresa@teste.com"}
+2024-05-27 20:14:13.740 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"aea8c869-039c-4aad-8cda-54f18099f590"}
+2024-05-27 20:14:16.554 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-27 20:14:16.564 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"Teste","operacao":"visualizarEmpresa","cnpj":"123456789101","razaoSocial":"Empresa Teste","status":201,"descricao":"este"}
+2024-05-28 22:53:28.186 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"empresa@teste.com"}
+2024-05-28 22:53:28.584 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"aea8c869-039c-4aad-8cda-54f18099f590"}
+2024-05-28 22:53:52.936 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"empresa@teste.com"}
+2024-05-28 22:53:52.965 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"Teste","operacao":"visualizarEmpresa","cnpj":"123456789101","razaoSocial":"Empresa Teste","status":201,"descricao":"este"}
+2024-05-29 00:23:25.054 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"teste@gmail.com"}
+2024-05-29 00:23:25.111 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"194c4e0a-15c0-42f4-84cf-838a560ef052"}
+2024-05-29 00:23:29.325 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:23:29.339 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"aaaaaaaaaaaaaaaaaaaaaaaaa","operacao":"visualizarEmpresa","cnpj":"11111111111111","razaoSocial":"teste","status":201,"descricao":"aaaaaaaaaaaaaaaaaaaaaaaaa"}
+2024-05-29 00:23:37.493 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"atualizarEmpresa","senha":"123456","ramo":"aaaaaaaaaaaaaaaaaaaaaaaaa","cnpj":"11111111111111","razaoSocial":"teste123","email":"teste@gmail.com","descricao":"aaaaaaaaaaaaaaaaaaaaaaaaa"}
+2024-05-29 00:23:37.599 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"atualizarEmpresa","status":201}
+2024-05-29 00:23:40.304 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:23:40.318 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"aaaaaaaaaaaaaaaaaaaaaaaaa","operacao":"visualizarEmpresa","cnpj":"11111111111111","razaoSocial":"teste","status":201,"descricao":"aaaaaaaaaaaaaaaaaaaaaaaaa"}
+2024-05-29 00:34:08.192 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"teste@gmail.com"}
+2024-05-29 00:34:08.449 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"194c4e0a-15c0-42f4-84cf-838a560ef052"}
+2024-05-29 00:34:12.399 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:34:12.417 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"aaaaaaaaaaaaaaaaaaaaaaaaa","operacao":"visualizarEmpresa","cnpj":"11111111111111","razaoSocial":"teste","status":201,"descricao":"aaaaaaaaaaaaaaaaaaaaaaaaa"}
+2024-05-29 00:34:20.758 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:34:20.769 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"aaaaaaaaaaaaaaaaaaaaaaaaa","operacao":"visualizarEmpresa","cnpj":"11111111111111","razaoSocial":"teste","status":201,"descricao":"aaaaaaaaaaaaaaaaaaaaaaaaa"}
+2024-05-29 00:34:29.281 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"atualizarEmpresa","senha":"123456","ramo":"aaaaaaaaaaaaaaaaaaaaaaaaa","cnpj":"11111111111111","razaoSocial":"teste123","email":"teste@gmail.com","descricao":"aaaaaaaaaaaaaaaaaaaaaaaaa"}
+2024-05-29 00:34:29.339 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"atualizarEmpresa","status":201}
+2024-05-29 00:34:32.436 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:34:32.446 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"aaaaaaaaaaaaaaaaaaaaaaaaa","operacao":"visualizarEmpresa","cnpj":"11111111111111","razaoSocial":"teste123","status":201,"descricao":"aaaaaaaaaaaaaaaaaaaaaaaaa"}
+2024-05-29 00:34:38.560 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"atualizarEmpresa","senha":"123456","ramo":"aaaaaaaaaaaaaaaaaaaaaaaaa","cnpj":"99999999","razaoSocial":"teste123","email":"teste@gmail.com","descricao":"aaaaaaaaaaaaaaaaaaaaaaaaa"}
+2024-05-29 00:34:38.575 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"atualizarEmpresa","status":201}
+2024-05-29 00:34:42.575 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:34:42.584 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"aaaaaaaaaaaaaaaaaaaaaaaaa","operacao":"visualizarEmpresa","cnpj":"99999999","razaoSocial":"teste123","status":201,"descricao":"aaaaaaaaaaaaaaaaaaaaaaaaa"}
+2024-05-29 00:34:54.277 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"atualizarEmpresa","senha":"123456","ramo":"ccccc","cnpj":"99999999","razaoSocial":"teste123","email":"teste@gmail.com","descricao":"bbbbb"}
+2024-05-29 00:34:54.294 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"atualizarEmpresa","status":201}
+2024-05-29 00:34:57.454 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:34:57.466 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"ccccc","operacao":"visualizarEmpresa","cnpj":"99999999","razaoSocial":"teste123","status":201,"descricao":"bbbbb"}
+2024-05-29 00:35:03.208 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:35:03.219 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"ccccc","operacao":"visualizarEmpresa","cnpj":"99999999","razaoSocial":"teste123","status":201,"descricao":"bbbbb"}
+2024-05-29 00:38:29.639 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"teste@gmail.com"}
+2024-05-29 00:38:29.875 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"194c4e0a-15c0-42f4-84cf-838a560ef052"}
+2024-05-29 00:39:31.452 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"teste@gmail.com"}
+2024-05-29 00:39:31.469 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"194c4e0a-15c0-42f4-84cf-838a560ef052"}
+2024-05-29 00:39:35.249 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:39:35.275 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"ccccc","operacao":"visualizarEmpresa","cnpj":"99999999","razaoSocial":"teste123","status":201,"descricao":"bbbbb"}
+2024-05-29 00:39:40.105 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:39:40.114 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"ccccc","operacao":"visualizarEmpresa","cnpj":"99999999","razaoSocial":"teste123","status":201,"descricao":"bbbbb"}
+2024-05-29 00:40:36.605 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:40:36.615 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"ccccc","operacao":"visualizarEmpresa","cnpj":"99999999","razaoSocial":"teste123","status":201,"descricao":"bbbbb"}
+2024-05-29 00:40:56.779 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"apagarCandidato","email":"email@mail.com"}
+2024-05-29 00:40:56.805 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"apagarCandidato","status":201}
+2024-05-29 00:40:57.481 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"logout","token":"60a994b4-a166-4815-9004-9118bd1540ae"}
+2024-05-29 00:40:57.485 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"logout","status":204}
+2024-05-29 00:42:00.565 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123456","email":"teste@gmail.com"}
+2024-05-29 00:42:00.582 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"194c4e0a-15c0-42f4-84cf-838a560ef052"}
+2024-05-29 00:42:03.796 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:42:03.813 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123456","ramo":"ccccc","operacao":"visualizarEmpresa","cnpj":"99999999","razaoSocial":"teste123","status":201,"descricao":"bbbbb"}
+2024-05-29 00:42:32.381 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"atualizarEmpresa","senha":"123123","ramo":"ramo1","cnpj":"99999999","razaoSocial":"razão social 123","email":"teste@gmail.com","descricao":"desc123"}
+2024-05-29 00:42:32.459 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"atualizarEmpresa","status":201}
+2024-05-29 00:42:35.340 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:42:35.347 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123123","ramo":"ramo1","operacao":"visualizarEmpresa","cnpj":"99999999","razaoSocial":"razão social 123","status":201,"descricao":"desc123"}
+2024-05-29 00:42:43.141 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:42:43.157 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123123","ramo":"ramo1","operacao":"visualizarEmpresa","cnpj":"99999999","razaoSocial":"razão social 123","status":201,"descricao":"desc123"}
+2024-05-29 00:42:48.247 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"logout","token":"60a994b4-a166-4815-9004-9118bd1540ae"}
+2024-05-29 00:42:48.260 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"logout","status":204}
+2024-05-29 00:43:17.517 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123123","email":"teste@gmail.com"}
+2024-05-29 00:43:17.543 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"194c4e0a-15c0-42f4-84cf-838a560ef052"}
+2024-05-29 00:48:31.975 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123123","email":"teste@gmail.com"}
+2024-05-29 00:48:32.213 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"194c4e0a-15c0-42f4-84cf-838a560ef052"}
+2024-05-29 00:48:37.266 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"apagarCandidato","email":"email@mail.com"}
+2024-05-29 00:48:37.285 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"apagarCandidato","status":201}
+2024-05-29 00:48:38.378 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"logout","token":"60a994b4-a166-4815-9004-9118bd1540ae"}
+2024-05-29 00:48:38.383 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"logout","status":204}
+2024-05-29 00:51:50.355 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123123","email":"teste@gmail.com"}
+2024-05-29 00:51:50.441 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"194c4e0a-15c0-42f4-84cf-838a560ef052"}
+2024-05-29 00:57:47.377 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123123","email":"teste@gmail.com"}
+2024-05-29 00:57:47.645 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"194c4e0a-15c0-42f4-84cf-838a560ef052"}
+2024-05-29 00:59:44.045 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"visualizarEmpresa","email":"teste@gmail.com"}
+2024-05-29 00:59:44.134 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"senha":"123123","ramo":"ramo1","operacao":"visualizarEmpresa","cnpj":"99999999","razaoSocial":"razão social 123","status":201,"descricao":"desc123"}
+2024-05-29 01:00:49.681 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"apagarEmpresa","email":"email@mail.com"}
+2024-05-29 01:00:49.743 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"apagarEmpresa","mensagem":"Operação não encontrada","status":404}
+2024-05-29 01:04:00.028 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginCandidato","senha":"123123","email":"teste@gmail.com"}
+2024-05-29 01:04:00.271 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginCandidato","mensagem":"Login ou senha incorretos","status":401}
+2024-05-29 01:04:05.999 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"loginEmpresa","senha":"123123","email":"teste@gmail.com"}
+2024-05-29 01:04:06.021 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"loginEmpresa","status":200,"token":"194c4e0a-15c0-42f4-84cf-838a560ef052"}
+2024-05-29 01:04:10.032 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"apagarEmpresa","email":"teste@gmail.com"}
+2024-05-29 01:04:10.056 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"apagarEmpresa","status":201}
+2024-05-29 01:04:11.359 [JavaFX Application Thread] INFO  com.sd.client.app.packages.BasePackage - Enviado: {"operacao":"logout","token":"60a994b4-a166-4815-9004-9118bd1540ae"}
+2024-05-29 01:04:11.364 [JavaFX Application Thread] INFO  com.sd.client.app.packages.SimpleResponse - Recebido: {"operacao":"logout","status":204}

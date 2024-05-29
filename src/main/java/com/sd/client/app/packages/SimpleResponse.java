@@ -23,6 +23,11 @@ public class SimpleResponse {
     private String  token;
     private String  senha;
     private String  nome;
+    private String  razaoSocial;
+    private String  cnpj;
+    private String descricao;
+    private String ramo;
+
 
     public String getOperacao() {
         return operacao;
@@ -106,5 +111,37 @@ public class SimpleResponse {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getRazaoSocial() {
+        return razaoSocial;
+    }
+
+    public void setRazaoSocial(String razaoSocial) {
+        this.razaoSocial = razaoSocial;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getRamo() {
+        return ramo;
+    }
+
+    public void setRamo(String ramo) {
+        this.ramo = ramo;
     }
 }

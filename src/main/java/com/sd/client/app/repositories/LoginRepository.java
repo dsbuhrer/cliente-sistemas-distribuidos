@@ -9,6 +9,7 @@ import com.sd.client.app.packages.data.login.LoginRequestData;
 import com.sd.client.app.packages.data.login.LoginPackageData;
 import com.sd.client.app.packages.data.logout.LogoutRequestData;
 import com.sd.client.app.packages.BasePackage;
+import com.sd.client.app.storage.LoggedEmpresa;
 import com.sd.client.app.storage.LoggedUser;
 import com.sd.client.view.validators.ValidationResponse;
 import com.sd.client.view.validators.Validator;
@@ -25,7 +26,6 @@ public class LoginRepository extends BaseRepository {
         super();
     }
 
-
     private boolean waitLoginResponse() {
         BaseResponse<LoginPackageData> response;
         String response_data;
@@ -39,16 +39,33 @@ public class LoginRepository extends BaseRepository {
         } catch (IOException | ResponseErrorException e) {
             System.out.println(e.getMessage());
             return false;
-//            "login/login.fxml"
         }
         return true;
-//        "menu/menu_admin.fxml"
+    }
+
+    private boolean waitLoginEmpresaResponse() {
+        BaseResponse<LoginPackageData> response;
+        String response_data;
+
+        try {
+            response_data = app.read();
+            response = BaseResponse.fromJson(response_data, LoginPackageData.class);
+            LinkedHashMap data = response.getData();
+
+            LoggedEmpresa.save(data.get("token").toString());
+        } catch (IOException | ResponseErrorException e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+        return true;
     }
 
     private boolean waitLogoutResponse() {
         try {
             app.read();
             LoggedUser.clear();
+            LoggedEmpresa.clear();
+
         } catch (IOException | ResponseErrorException e) {
             return false;
         }
@@ -66,6 +83,25 @@ public class LoginRepository extends BaseRepository {
         super.app.getOut().println(json);
         if (waitLoginResponse()){
             LoggedUser.saveEmail(dataMap.get("email").toString());
+//            System.out.println(dataMap.get("email").toString() + "e-mail salvo");
+            return "menu/menu_admin.fxml";
+        }else {
+            return "login/login.fxml";
+        }
+
+    }
+
+    public String loginEmpresa(String email, String password) throws IOException {
+
+        Map<String, Object> dataMap = new HashMap<>();
+        dataMap.put("email", email);
+        dataMap.put("senha", password);
+
+        BasePackage request = new BasePackage("loginEmpresa", dataMap);
+        String json = request.toJson();
+        super.app.getOut().println(json);
+        if (waitLoginEmpresaResponse()){
+            LoggedEmpresa.saveEmail(dataMap.get("email").toString());
 //            System.out.println(dataMap.get("email").toString() + "e-mail salvo");
             return "menu/menu_admin.fxml";
         }else {
